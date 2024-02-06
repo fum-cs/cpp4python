@@ -1,3 +1,20 @@
+---
+layout: default
+title: Let's look at a C++ program
+nav_order: 2
+---
+
+# Let's look at a C++ program
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 # Let\'s look at a C++ program
 
 A time honored tradition in computer science is to write a program
