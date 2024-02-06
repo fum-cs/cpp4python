@@ -5,9 +5,11 @@ nav_order: 2
 ---
 
 # Let's look at a C++ program
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -48,7 +50,7 @@ int main() {
 Good :)
 Very similar.
 
-But unfortunately the above code can not be run on current C++ compilers! So we move back to C++11 - C++20.
+But unfortunately the above code can not be run on almost all current C++ compilers! So we move back to C++11 -- C++20.
 
 *import*, *print* and *println* are only [available in C++23](https://en.cppreference.com/w/cpp/header/print).
 
@@ -87,8 +89,48 @@ about C++.
 
 ## Compilation
 
-A question you may have about this little program is "How would I run it
-on my own machine?" Running a C++ program is not as simple as running a
+A question you may have about this little program is "How would I run it?"
+
+The good news is that many online C++ compilers are exist that you can use them to run your program such as the following ones:
+
+### Online C++ compilers
+
+1. **Wandbox**:
+   - Provides various functionality, including support for multiple files and different editor keybindings.
+   - Features libraries like Boost (up to 1.64), Sprout, and MessagePack.
+   - [Explore Wandbox](https://wandbox.org/)
+
+2. **cpp.sh**:
+   - Compile and execute C++ programs online.
+   - Simple and straightforward interface.
+   - [Try cpp.sh](http://cpp.sh/)
+
+3. **OnlineGDB C Compiler**:
+   - Code, compile, run, and debug C programs online.
+   - Write your code in the editor and press the "Run" button to compile and execute it.
+   - [Try OnlineGDB](https://www.onlinegdb.com/online_c_compiler)
+
+4. **Programiz C++ Compiler**:
+   - A user-friendly online compiler that allows you to write and run C++ code.
+   - Supports taking input from the user and accessing standard libraries.
+   - Utilizes the **GCC (g++) compiler** for code compilation.
+   - [Try it out here](https://www.programiz.com/cpp-programming/online-compiler/)
+
+5. **OnlineCPP**:
+   - Quick and easy tool for building, compiling, and testing C++ programs online.
+   - Supports various programming languages, including C++.
+   - [Visit OnlineCPP](https://www.online-cpp.com/)
+
+6. **Replit C++ Compiler & Interpreter**:
+   - Collaborate in real-time with friends, classmates, or coworkers.
+   - Quickly deploy your C++ projects.
+   - [Explore Replit](https://replit.com/languages/cpp)
+
+Only [Wandbox](https://wandbox.org/) meet the requirements of our course for formatted string. Also many of them can be used for usual C++ programs.
+
+### Installing C++ compiler on your system
+
+The bad news is that if you want to compile and run a C++ program on your own machine, there is not as simple as running a
 Python program. The first big difference between C++ and Python is that
 Python is an *interpreted language* while C++ is a *compiled language*.
 We could run our Python programs in the Python **interpreter**, and we
@@ -105,8 +147,8 @@ Now you may be wondering what good is this extra step? What does
 compiling do for us? There are a couple of important benefits we get
 from compiling:
 
--   Early detection of errors
--   Faster program execution
+- Early detection of errors
+- Faster program execution
 
 The job of the compiler is to turn your C++ code into language that your
 machine can understand. We call the code that the computer understands
@@ -185,28 +227,14 @@ in C++.
 In fact, the following program will run perfectly even though the lack
 of meaningful spacing is more difficult for humans to read.
 
-::: {.activecode language="cpp"}
-hellocppugly
-
-\#include \<iostream\> using namespace std; int main(){cout \<\< \"Hello
-World!n\"; return 0;}
-:::
+```cpp
+#include <iostream>
+using namespace std; int main(){cout << "Hello World!\n"; return 0;}
+```
 
 As you program in C++, we strongly recommend you continue to use the
 kind of human-readable formatting you have become used to in Python. You
 will likely learn to appreciate this when you are debugging.
-
-Without peeking, see if you can put the following code in the correct
-order.
-
-::: {.parsonsprob language="c++" adaptive="" noindent=""}
-pp_introcpp_order
-
-Correctly rearrange the code below to implement hello world in C++:
-\-\-\-\--&\#x22D5include &\#x003Ciostream&\#x003E ===== using namespace
-std; ===== int main() { ===== cout \<\< \"Hello World!n\"; ===== return
-0; ===== }
-:::
 
 ## Comments in C++
 
@@ -254,24 +282,20 @@ direct output to the designated output device or file. The output
 operator can also be used to concatenate output, much like the \"+\" can
 be used to concatenate in Python.
 
-::: {.activecode language="cpp"}
-hellocppducky
-
-/\* Ever heard of rubber duck debugging?
-
-:   See <https://en.wikipedia.org/wiki/Rubber_duck_debugging> \*/
-
-\#include \<iostream\> using namespace std;
+```cpp
+/* Ever heard of rubber duck debugging?
+    See https://en.wikipedia.org/wiki/Rubber_duck_debugging */
+#include <iostream>
+using namespace std;
 
 int main(){
-
-:   cout \<\< \"Ever heard of rubber duck debugging?\" \<\< endl; cout
-    \<\< \" \_\_ \" \<\< endl; cout \<\< \" \<(o )\_\_\_-\" \<\< endl;
-    cout \<\< \" ( .\_\_\> /\" \<\< endl; cout \<\< \" \`\-\-\--\' \"
-    \<\< endl;
-
+    cout << "Ever heard of rubber duck debugging?" << endl;
+    cout << "                __     " << endl;
+    cout << "              <(o )___-" << endl;
+    cout << "               ( .__> /" << endl;
+    cout << "                `----' " << endl;
 }
-:::
+```
 
 ## Standard Input
 
@@ -285,29 +309,29 @@ keyboard) relatively easy. The input operator in C++ is `>>`.
 
 Here is an example that uses `cin`:
 
-::: {.activecode language="cpp" stdin="12.4"}
-cin_user_input
-
-The active code below is an example of what getting input from the user
-might look like. Feel free to change 12.4 to other values! \~\~\~\~
-\#include \<iostream\> using namespace std;
+```cpp
+// The active code below is an example of what getting input from the user might look like. Feel free to change 12.4 to other values!
+~~~~
+#include <iostream>
+using namespace std;
 
 int main() {
 
-> //declares num as a floating point number variable float num;
->
-> // Displays this text to the console cout \<\< \"Give me a number:\"
-> \<\< endl;
->
-> // Takes the user\'s input and stores it in num cin \>\> num;
->
-> // Displays to the console cout \<\< \"This is your number doubled: \"
-> \<\< num\*2 \<\< endl;
->
-> return 0;
+//declares num as a floating point number variable
+float num;
 
+// Displays this text to the console
+cout << "Give me a number:" << endl;
+
+// Takes the user's input and stores it in num
+cin >> num;
+
+// Displays to the console
+cout << "This is your number doubled: " << num*2 << endl;
+
+return 0;
 }
-:::
+```
 
 ## Type Declarations
 
@@ -332,82 +356,26 @@ C++ streams and file handling.
 Now that we have run our \"hello world\" program, lets go back and look
 at it carefully to see what we can learn about the C++ language.
 
-::: {.activecode language="cpp"}
-hellocommented
+```cpp
+/* This hello world program demonstrates the C++ concepts of commenting, using libraries, and using output.
+*/
 
-/\* This hello world program demonstrates the C++ concepts
+#include <iostream>
+using namespace std;
 
-:   of commenting, using libraries, and using output.
-
-\*/
-
-\#include \<iostream\> using namespace std;
-
-int main(){ // main() must exist & return an int
-
-:   cout \<\< \"Hello World!n\"; return 0; // 0 indicates program ended
-    correctly.
-
-}
-:::
+int main(){         // main() must exist & return an int
+    cout << "Hello World!\n";
+    return 0;       // 0 indicates program ended correctly.
+    }
+```
 
 This simple example illustrates a few very important rules:
 
-1.  Everything in C++ must be declared as a specific type of object or
+1. Everything in C++ must be declared as a specific type of object or
     variable, including declaring the return type for each function.
-2.  Every C++ program must have a function which begins as `int main()`,
+2. Every C++ program must have a function which begins as `int main()`,
     and ends with the statement `return 0;` when successfully completed.
-3.  C++ statements are ended by a semi-colon.
-4.  White space is mostly meaningless in C++, but all C++ code blocks
+3. C++ statements are ended by a semi-colon.
+4. White space is mostly meaningless in C++, but all C++ code blocks
     must be surrounded by curly brackets {}, rather than using
     indentation to delineate blocks as is done in Python.
-
-# Check yourself
-
-::: {.mchoice answer_a="&#x003C!-" answer_b="&#x22D5" answer_c="//" answer_d="@" answer_e="none of the above" correct="c" feedback_a="No, &#x003C!- is used in html to begin comments, but it is not used in C++." feedback_b="No, &#x22D5 is used in Python for comments, but in C++ it is used for compiler directives such as loading a code library." feedback_c="Correct!" feedback_d="No, @ is not used in C++." feedback_e="One of the above is correct."}
-mc_comment
-
-What symbol or set of symbols will begin a comment in C++ when the
-comment extends only to the end of the line?
-:::
-
-::: {.mchoice answer_a="True" answer_b="False" correct="b" feedback_a="Sorry, multi-line comments are possible in both languages, but they look different." feedback_b="Right!  In C++ multiline comments begin with /* and end with */. In Python, one could use a triple quoted string."}
-mc_mlcomment
-
-True or False: In both Python and C++, multi-line comments begin with
-`/*` and end with `*/`.
-:::
-
-::: {.mchoice answer_a="cout x;" answer_b="output x;" answer_c="print x;" answer_d="none of the above" correct="d" feedback_a="Partially right. The object cout stands for character output and you need it, but you will also need to use the insertion operator <<." feedback_b="No, output is not a C++ command or object." feedback_c="No, print is a Python command, but is not used in C++." feedback_d="The correct statement would be \"cout << x;\" or \"std:cout << x;\" but the insertion operator is certainly needed."}
-mc_comment_out
-
-Given a variable called x. What statement will print the contents of x?
-:::
-
-::: {.fillintheblank}
-input
-
-What keyword from the Standard Library (std) is used in conjunction with
-the extraction operator to accept C++ input from the keyboard as the
-standard input?
-
-\- :cin: Right! It stands for character input.
-
-:   
-
-    raw_input
-
-    :   That\'s Python, not C++!
-
-    input
-
-    :   That\'s Python, not C++!
-
-    scanf
-
-    :   That\'s C, not C++!
-
-    default
-
-    :   Incorrect. Please try again.
-:::
