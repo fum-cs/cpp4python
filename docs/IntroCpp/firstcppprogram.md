@@ -23,71 +23,54 @@ logic errors are possible to make, so getting it to run relies only on
 understanding the syntax. Let\'s look at an easy version of \"hello
 world\" in Python:
 
-::: {.activecode language="python"}
-hellopysimp
-
-print(\"Hello World!\")
-:::
+```python
+print("Hello World!")
+```
 
 Now, lets look at a more "complicated" version of the \"hello world\"
 program with a `main` function in Python:
 
-::: {.activecode language="python"}
-hellopymain
-
-def main():
-
-:   print(\"Hello World!\")
-
-main()
-:::
-
 ```python
-# hellopymain.py
 def main():
-  print(\"Hello World!\")
-
+    print("Hello World!")
 main()
 ```
 
-Next, lets look at the same program written in C++:
-
-::: {.activecode language="cpp"}
-hellocppstd
-
-\#include \<iostream\>
-
-int main(){
-
- std::cout \<\< \"Hello World!n\"; return 0;
-
-}
-:::
+Next, lets look at (almost) the same program written in C++23:
 
 ```cpp
-// hellocppstd.cpp
+import std;
+int main() {
+    std::print("Hello, World!");
+}
+```
+
+Good :)
+Very similar.
+But the unfortunately the above code can not be run on current C++ compilers! So we move back to C++11 - C++20.
+import, **print** and **println** are only [available in C++23](https://en.cppreference.com/w/cpp/header/print).
+Next, lets look at the same program written in C++11:
+
+```cpp
 #include <iostream>
-int main()
-{
- std::cout << "Hello World!\n"; 
- return 0;
+int main(){
+    std::cout << "Hello World!\n";
+    return 0;
 }
 ```
 
 The above program can alternatively be written as follows to allow
 better facilitate standard input and output:
 
-::: {.activecode language="cpp"}
-hellocppnamespace
-
-\#include \<iostream\> using namespace std;
+```cpp
+#include <iostream>
+using namespace std;
 
 int main(){
-
-:   cout \<\< \"Hello World!n\"; return 0;
-
+    cout << "Hello World!\n";
+    return 0;
 }
-:::
+```
 
 What we see is that at the core there are a few similarities with the
 complicated Python version, such as the `main` function and the string
