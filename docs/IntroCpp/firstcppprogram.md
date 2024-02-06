@@ -25,6 +25,14 @@ def main():
 main()
 :::
 
+```python
+# hellopymain.py
+def main():
+  print(\"Hello World!\")
+
+main()
+```
+
 Next, lets look at the same program written in C++:
 
 ::: {.activecode language="cpp"}
@@ -34,10 +42,20 @@ hellocppstd
 
 int main(){
 
-> std::cout \<\< \"Hello World!n\"; return 0;
+ std::cout \<\< \"Hello World!n\"; return 0;
 
 }
 :::
+
+```cpp
+// hellocppstd.cpp
+#include <iostream>
+int main()
+{
+ std::cout << "Hello World!\n"; 
+ return 0;
+}
+```
 
 The above program can alternatively be written as follows to allow
 better facilitate standard input and output:
