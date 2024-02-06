@@ -47,9 +47,12 @@ int main() {
 
 Good :)
 Very similar.
-But the unfortunately the above code can not be run on current C++ compilers! So we move back to C++11 - C++20.
-import, **print** and **println** are only [available in C++23](https://en.cppreference.com/w/cpp/header/print).
-Next, lets look at the same program written in C++11:
+
+But unfortunately the above code can not be run on current C++ compilers! So we move back to C++11 - C++20.
+
+*import*, *print* and *println* are only [available in C++23](https://en.cppreference.com/w/cpp/header/print).
+
+Next, lets look at the same program written using [*cout*](https://en.cppreference.com/w/cpp/io/cout) in previous standards of C++, including C++11:
 
 ```cpp
 #include <iostream>
@@ -120,11 +123,11 @@ the compiler catches shortly. Chances are you may create some on your
 own very soon too, but first let\'s talk about each of the statements in
 a C++ program.
 
-::: {.dragndrop feedback="This is feedback." match_1="Compiler|||generally transforms code written in a high-level language into a low-level language in order to create an executable program" match_2="Interpreter|||directly executes statements in a scripting language without requiring them to have been assembled into machine language"}
+<!-- ::: {.dragndrop feedback="This is feedback." match_1="Compiler|||generally transforms code written in a high-level language into a low-level language in order to create an executable program" match_2="Interpreter|||directly executes statements in a scripting language without requiring them to have been assembled into machine language"}
 interpreterdrag
 
 Match Compiler and Interpreter to the correct definition.
-:::
+::: -->
 
 ## Using headers and libraries
 
