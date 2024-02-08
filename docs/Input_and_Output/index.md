@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Collection Data Types
-nav_order: 6
+title: Input and Output
+nav_order: 7
 has_children: true
 ---
 

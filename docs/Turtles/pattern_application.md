@@ -1,4 +1,10 @@
 ---
+layout: default
+title: Advanced Features
+nav_exclude: true
+---
+
+---
 title: Practical Application - Tessellation
 ---
 

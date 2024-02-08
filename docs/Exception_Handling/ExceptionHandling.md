@@ -1,3 +1,10 @@
+---
+layout: default
+title: Defining C++ Functions
+parent: Exception Handling
+nav_order: 2
+---
+
 # Exception Handling
 
 There are two types of errors that typically occur when writing

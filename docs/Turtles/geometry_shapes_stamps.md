@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Geometry, Shapes, and Stamps
+nav_exclude: true
 ---
 
 Every basic shape in `C-Turtle` is a set of coordinates. Within the

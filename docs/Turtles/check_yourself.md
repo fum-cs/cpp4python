@@ -1,6 +1,9 @@
 ---
+layout: default
 title: Check Yourself
+nav_exclude: true
 ---
+
 
 ::: {.activecode language="cpp"}
 turtle_checkyourself_ac_1

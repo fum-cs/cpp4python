@@ -1,3 +1,10 @@
+---
+layout: default
+title: Glossary
+parent: Exception Handling
+nav_order: 5
+---
+
 # Glossary
 
 ::: {.glossary}

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Defining C++ Functions
+parent: Functions
+nav_order: 2
+---
+
 # Defining C++ Functions
 
 In general, we can hide the details of any computation by defining a

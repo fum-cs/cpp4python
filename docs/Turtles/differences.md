@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Python\'s turtle vs C-Turtle
+nav_exclude: true
 ---
 
 `C-Turtle` varies from the Python `turtle` library primarily in syntax.

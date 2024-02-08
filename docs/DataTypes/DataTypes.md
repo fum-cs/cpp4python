@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Atomic C++ Data Types
-parent: Atomic C++ Data Types
+title: C++ Data Types
+parent: C++ Data Types
 nav_order: 3
 ---
 

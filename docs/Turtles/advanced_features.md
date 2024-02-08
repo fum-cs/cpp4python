@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Advanced Features
+nav_exclude: true
 ---
 
 Turtles are a large tool, and thus have a lot of options dictating how

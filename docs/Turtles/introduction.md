@@ -1,3 +1,9 @@
+---
+layout: default
+title: Advanced Features
+nav_exclude: true
+---
+
 # Introduction
 
 C++ is designed with the principal that speed is more important than

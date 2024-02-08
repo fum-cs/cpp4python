@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Collection Data Types
-nav_order: 6
+title: Functions
+nav_order: 5
 has_children: true
 ---
 

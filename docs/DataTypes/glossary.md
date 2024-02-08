@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary
-parent: Atomic C++ Data Types
+parent: C++ Data Types
 nav_order: 5
 ---
 

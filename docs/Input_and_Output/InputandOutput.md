@@ -1,3 +1,10 @@
+---
+layout: default
+title: File Handling
+parent: Input and Output
+nav_order: 5
+---
+
 # File Handling
 
 File handling in C++ also uses a `stream` in a similar way to the cout

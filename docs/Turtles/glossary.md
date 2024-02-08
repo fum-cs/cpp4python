@@ -1,3 +1,9 @@
+---
+layout: default
+title: Advanced Features
+nav_exclude: true
+---
+
 # Glossary
 
 ::: {.glossary}

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Collection Data Types
-nav_order: 6
+title: Exception Handling
+nav_order: 8
 has_children: true
 ---
 
