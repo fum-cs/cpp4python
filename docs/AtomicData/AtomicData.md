@@ -1,3 +1,9 @@
+---
+layout: default
+title: Atomic C++ Data Types
+nav_order: 3
+---
+
 # Using Data in C++
 
 C++ requires the users specify the specific data type of each variable

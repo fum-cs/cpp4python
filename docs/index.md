@@ -1,3 +1,9 @@
+---
+layout: default
+title: 404
+nav_exclude: true
+---
+
 ::: {.meta description="An interactive book designed to help learners transition from Python to C++." keywords="C++, cpp, Python, computer science"}
 :::
 

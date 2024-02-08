@@ -1,5 +1,7 @@
 ---
+layout: default
 title: "Welcome to *C++ for Python Programmers*"
+nav_exclude: true
 ---
 
 This short ebook is intended to help Python programmers or students with

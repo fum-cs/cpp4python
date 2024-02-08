@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Introduction to C++ for Python Programmers
+nav_exclude: true
 ---
 
 ::: {.toctree caption="Introduction to C++ for Python Programmers" maxdepth="2"}

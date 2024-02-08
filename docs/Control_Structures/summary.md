@@ -1,6 +1,10 @@
 ---
+layout: default
 title: Summary
+parent: Control Structures
+nav_order: 4
 ---
+
 
 1.  Like Python C++ also supports the `if-else` conditional statements,
     and they behave the same way as they do in a Python program.

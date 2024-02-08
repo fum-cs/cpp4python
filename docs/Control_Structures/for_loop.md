@@ -1,3 +1,10 @@
+---
+layout: default
+title: For Loops
+parent: Control Structures
+nav_order: 4
+---
+
 # For Loops
 
 Even though the `while` type of construct is very useful in a wide

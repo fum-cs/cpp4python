@@ -1,3 +1,10 @@
+---
+layout: default
+title: Glossary
+parent: Control Structures
+nav_order: 5
+---
+
 # Glossary
 
 ::: {.glossary}

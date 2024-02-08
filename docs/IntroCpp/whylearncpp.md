@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Why Learn Another Programming Language?
+nav_exclude: true
 ---
 
 Python is a great language for beginning programming for several

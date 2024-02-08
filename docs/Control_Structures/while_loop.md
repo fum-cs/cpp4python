@@ -1,6 +1,10 @@
 ---
+layout: default
 title: While Loops
+parent: Control Structures
+nav_order: 3
 ---
+
 
 As we noted earlier, algorithms require two important control
 structures: iteration and selection. Both of these are supported by

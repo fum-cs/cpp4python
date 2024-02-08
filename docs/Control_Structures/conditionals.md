@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Conditionals
+parent: Control Structures
+nav_order: 2
 ---
 
 Conditional statements in Python and C++ are very similar.
