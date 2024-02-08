@@ -4,6 +4,21 @@ layout: home
 nav_order: 1
 ---
 
+Welcome to the advanced programming course which is devoted to C++ for Python programmers.
+
+This course consists of several chapters, each covering a specific topic or feature of C++. Each chapter contains a lot of code examples and exercises to help you understand and practice the concepts. You can find the source code on the [GitHub repository](https://github.com/fum-cs/cpp4python/) of this course (TO-DO). I hope you enjoy this course and learn a lot from it. 
+
+I should also mention that the original material of this course was from [Jan Pearce, Berea College and Brad Miller, Runestone](https://runestone.academy/ns/books/published/cpp4python/index.html). I have forked the [related repository](https://github.com/pearcej/cpp4python), convert rst files to markdow, and modified it to suit my own needs and preferences. I would like to thank them for their great work and generosity.
+
+## Reporting Typos or Other Problems
+
+Thank you for your help in improving this text. If you find a typo or
+other problem, you can visit the [Github issue
+tracker](https://github.com/fum-cs/cpp4python/issues) giving as much
+information as needed to understand the problem. If you include the URL
+of the page where the problem occurred, this is especially helpful.
+
+The following section is written by the authors of the original text:
 
 # C++ for Python Programmers
 
@@ -26,28 +41,6 @@ love to see any modifications or additions you make. Please, Fork Me!
 
 By Jan Pearce, Berea College and Brad Miller, Runestone
 
-```{=html}
-<ul>
-<li><a href="/runestone/assignments/chooseAssignment.html">Assignments</a></li>
-</ul>
-```
-::: {.toctree numbered="" maxdepth="3"}
-IntroCpp/toctree.rst AtomicData/toctree.rst
-Control_Structures/toctree.rst Functions/toctree.rst
-CollectionData/toctree.rst Input_and_Output/toctree.rst
-Exception_Handling/toctree.rst Turtles/toctree.rst
-:::
-
-## Reporting Typos or Other Problems
-
-Thank you for your help in improving this text. If you find a typo or
-other problem, you can visit the [Github issue
-tracker](https://github.com/pearcej/cpp4python/issues) giving as much
-information as needed to understand the problem. If you include the URL
-of the page where the problem occurred, this is especially helpful.
-Alternatively, you can contact the author [Jan
-Pearce](https://www.berea.edu/csc/faculty-and-staff/dr-jan-pearce/) via
-email.
 
 ## Acknowledgements
 
@@ -70,21 +63,3 @@ library](https://github.com/walkerje/C-Turtle) which makes graphing in
 C++ particularly easy for Python programmers because it used the Python
 Turtle library syntax, and for his excellent work in porting it to
 Runestone.
-
-## Index and Search
-
--   `genindex`{.interpreted-text role="ref"}
--   `search`{.interpreted-text role="ref"}
-
-```{=html}
-<div style="width: 500px; margin-left: auto; margin-right: auto;">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img alt="Creative Commons License" style="border-width:0; display:block; margin-left:
-auto; margin-right:auto;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-<br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-property="dct:title" rel="dct:type">C++ for Python Programmers</span> by
-<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
-Janice L. Pearce and Bradley N. Miller</span> is licensed under a
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
-```

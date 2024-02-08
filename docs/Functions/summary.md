@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Summary
+parent: Functions
+nav_order: 4
 ---
 
 1.  Like Python, C++ supports the use of functions.
