@@ -1,3 +1,10 @@
+---
+layout: default
+title: 
+parent: Collection Data Types
+nav_order: 2
+---
+
 # Collections
 
 In addition to the numeric, Boolean, and character types, C++ also

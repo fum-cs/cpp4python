@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Let's look at a C++ program
-nav_order: 2
+parent: Introduction to C++ for Python Programmers
+nav_order: 3
 ---
 
 # Let's look at a C++ program

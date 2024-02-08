@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 404
-nav_exclude: true
+title: Introduction
+parent: Introduction to C++ for Python Programmers
+nav_order: 4
 ---
 
 # Glossary

@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Strings
+parent: Collection Data Types
+nav_order: 4
 ---
 
 **Strings** are sequential collections of zero or more characters such

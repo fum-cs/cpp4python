@@ -1,8 +1,10 @@
 ---
 layout: default
-title: 404
-nav_exclude: true
+title: Glossary
+parent: Atomic C++ Data Types
+nav_order: 5
 ---
+
 
 # Glossary
 

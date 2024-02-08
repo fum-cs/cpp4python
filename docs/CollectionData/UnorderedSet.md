@@ -1,3 +1,10 @@
+---
+layout: default
+title: Unordered Sets
+parent: Collection Data Types
+nav_order: 6
+---
+
 # Unordered Sets
 
 An **unordered_set** is an unordered collection of zero or more unique

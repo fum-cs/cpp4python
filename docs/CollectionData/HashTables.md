@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Hash Tables
+parent: Collection Data Types
+nav_order: 5
 ---
 
 If you have used a Python dictionary, then you have used a *hash table*.

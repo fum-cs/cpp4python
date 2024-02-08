@@ -1,3 +1,10 @@
+---
+layout: default
+title: Glossary
+parent: Collection Data Types
+nav_order: 8
+---
+
 # Glossary
 
 ::: {.glossary}

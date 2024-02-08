@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Introduction
+parent: Introduction to C++ for Python Programmers
+nav_order: 2
 ---
 
 This book assumes that you are already familiar with the

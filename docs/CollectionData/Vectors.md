@@ -1,5 +1,8 @@
 ---
+layout: default
 title: Vectors
+parent: Collection Data Types
+nav_order: 3
 ---
 
 **Vectors** are much more similar to Python lists than arrays are.

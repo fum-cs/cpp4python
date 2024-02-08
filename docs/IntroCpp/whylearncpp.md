@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Why Learn Another Programming Language?
-nav_exclude: true
+title: Introduction
+parent: Introduction to C++ for Python Programmers
+nav_order: 3
 ---
+
 
 Python is a great language for beginning programming for several
 reasons. First, the syntax is both sparse and clear. Second, the
