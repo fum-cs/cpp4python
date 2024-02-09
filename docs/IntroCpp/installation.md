@@ -27,4 +27,5 @@ nav_order: 4
 - Installing the following extensions in VSCode:
     * (C/C++ for Visual Studio Code)[https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools]
     * [C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)
+        + In *C/C++ Compile Run*'s setting change the value of `C-cpp-compile-run: Cpp-Copiler` to `C:\msys64\ucrt64\bin\g++`
         + In *C/C++ Compile Run*'s setting change the value of `C-cpp-compile-run: Cpp-flags` to `-std=c++20`

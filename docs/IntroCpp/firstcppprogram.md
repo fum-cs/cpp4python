@@ -294,6 +294,35 @@ int main(){
 }
 ```
 
+Another example:
+
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num = 42;
+    string name = "Mohammad";
+    cout << "My name is " << name << " and my favorite number is " << num;
+    return 0;
+}
+```
+
+The above example using `format' library, like formatted strings in Python:
+
+```cpp
+#include <format>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num = 42;
+    string name = "Mohammad";
+    cout << format("My name is {} and my favorite number is {}", name, num);
+    return 0;
+}
+```
+
 ## Standard Input
 
 In addition to being able to output to the standard output, we want to
