@@ -339,26 +339,30 @@ int main()
 }
 ```
 
-This style of string formatting is used in many app or languages such as MATLAB, Python, PHP, Java, Javascript, Ruby, Swift, Go, Kotlin and Rust.
+This style of string formatting is used in many app or languages such as MATLAB, Python, PHP, Java, Javascript, Ruby, Swift, Go, Kotlin and Rust, that can be checked in [www.onlinegdb.com](https://www.onlinegdb.com/).
 
 ```python
+# Python
 print("My name is {} and my favorite number is {}".format(name, num))
 ```
 
 ```python
-## using f-strings
+# Python using f-strings
 print(f"My name is {name} and my favorite number is {num}")
 ```
 
 ```matlab
+% MATLAB
 sprintf('My name is %s and my favorite number is %d', name, num)
 ```
 
 ```php
+// PHP
 echo "My name is $name and my favorite number is $num";
 ```
 
 ```java
+// JAVA
 System.out.printf("My name is %s and my favorite number is %d", name, num);
 ```
 

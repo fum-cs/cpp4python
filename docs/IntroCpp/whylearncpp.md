@@ -2,7 +2,7 @@
 layout: default
 title: Introduction
 parent: Introduction to C++ for Python Programmers
-nav_order: 3
+nav_order: 1
 ---
 
 
