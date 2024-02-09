@@ -308,7 +308,7 @@ int main()
 }
 ```
 
-The above example using `format' library, like formatted strings in Python:
+The above example using `format` library, like [formatted strings in Python](https://pyformat.info/):
 
 ```cpp
 #include <format>
@@ -321,6 +321,45 @@ int main()
     cout << format("My name is {} and my favorite number is {}", name, num);
     return 0;
 }
+```
+
+Currently the above program, runs only limited complilers; [Wnadbox](https://wandbox.org/) and [g++ 13.2](https://www.msys2.org/) are among of them.
+
+The following program is the C version of the program that runs on all of current C/C++ compilers.
+
+```c
+// Old C Style
+#include <stdio.h>
+int main()
+{
+    int num = 42;
+    char name[10] = "Mohammad";
+    printf("My name is %s and my favorite number is %d", name, num);
+    return 0;
+}
+```
+
+This style of string formatting is used in many app or languages such as MATLAB, Python, PHP, Java, Javascript, Ruby, Swift, Go, Kotlin and Rust.
+
+```python
+print("My name is {} and my favorite number is {}".format(name, num))
+```
+
+```python
+## using f-strings
+print(f"My name is {name} and my favorite number is {num}")
+```
+
+```matlab
+sprintf('My name is %s and my favorite number is %d', name, num)
+```
+
+```php
+echo "My name is $name and my favorite number is $num";
+```
+
+```java
+System.out.printf("My name is %s and my favorite number is %d", name, num);
 ```
 
 ## Standard Input
