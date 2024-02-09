@@ -166,6 +166,7 @@ the compiler catches shortly. Chances are you may create some on your
 own very soon too, but first let\'s talk about each of the statements in
 a C++ program.
 
+For installing a C++ compiler and using VSCode see [Installation Instructions](installation).
 
 ## Using headers and libraries
 
@@ -314,16 +315,12 @@ using namespace std;
 int main() {
 //declares num as a floating point number variable
 float num;
-
 // Displays this text to the console
 cout << "Give me a number:" << endl;
-
 // Takes the user's input and stores it in num
 cin >> num;
-
 // Displays to the console
 cout << "This is your number doubled: " << num*2 << endl;
-
 return 0;
 }
 ```
