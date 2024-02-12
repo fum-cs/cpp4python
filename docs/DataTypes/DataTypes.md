@@ -80,7 +80,8 @@ Run the following code to see that you understand each result.
       print(2**100)
   
   main()
-``` 
+```
+
 </td>
 <td markdown="span">
 
@@ -108,6 +109,7 @@ Run the following code to see that you understand each result.
   }
   
 ```
+
 </td>
 </tr>
 </tbody>
