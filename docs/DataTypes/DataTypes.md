@@ -60,6 +60,7 @@ Run the following code to see that you understand each result.
         <th>C++</th>
     </tr>
     <tr>
+    <tbody>
 <td markdown="span">
 
 ```python
@@ -79,9 +80,8 @@ Run the following code to see that you understand each result.
       print(2**100)
   
   main()
-
-```  
-        </td>
+``` 
+</td>
 <td markdown="span">
 
 ```cpp
@@ -108,9 +108,9 @@ Run the following code to see that you understand each result.
   }
   
 ```
-
-        </td>
-    </tr>
+</td>
+</tr>
+</tbody>
 </table>
 
 
