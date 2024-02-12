@@ -64,49 +64,49 @@ Run the following code to see that you understand each result.
 <td markdown="span">
 
 ```python
-  # Function that performs a variety of math operations.
-  def main():
-  
-      print(2+3*4)
-      print((2+3)*4)
-      print(2**10)
-      print(6/3)
-      print(7/3)
-      print(7//3)
-      print(7%3)
-      print(3/6)
-      print(3//6)
-      print(3%6)
-      print(2**100)
-  
-  main()
+# Function that performs a variety of math operations.
+def main():
+
+    print(2+3*4)
+    print((2+3)*4)
+    print(2**10)
+    print(6/3)
+    print(7/3)
+    print(7//3)
+    print(7%3)
+    print(3/6)
+    print(3//6)
+    print(3%6)
+    print(2**100)
+
+main()
 ```
 
 </td>
 <td markdown="span">
 
 ```cpp
-  #include <iostream>
-  #include <cmath>
-  using namespace std;
-  
-  // Function that perfoms various math operations
-  int main(){
-  
-      cout << (2+3*4) << endl;
-      cout << (2+3)*4 << endl;
-      cout << pow(2, 10) << endl;
-      cout << float(6)/3 << endl;
-      cout << float(7)/3 << endl;
-      cout << 7/3 << endl; //In C++ this is integer division
-      cout << 7%3 << endl;
-      cout << float(3)/6 << endl;
-      cout << 3/6 << endl;
-      cout << 3%6 << endl;
-      cout << pow(2, 100) << endl;
-  
-      return 0;
-  }
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function that perfoms various math operations
+int main(){
+
+    cout << (2+3*4) << endl;
+    cout << (2+3)*4 << endl;
+    cout << pow(2, 10) << endl;
+    cout << float(6)/3 << endl;
+    cout << float(7)/3 << endl;
+    cout << 7/3 << endl; //In C++ this is integer division
+    cout << 7%3 << endl;
+    cout << float(3)/6 << endl;
+    cout << 3/6 << endl;
+    cout << 3%6 << endl;
+    cout << pow(2, 100) << endl;
+
+    return 0;
+}
   
 ```
 
