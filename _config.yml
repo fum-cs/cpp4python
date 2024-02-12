@@ -16,5 +16,7 @@ aux_links:
     - 'https://fumcs.github.io'
   Mahmood Amintoosi:
     - 'https://mamintoosi.github.io'
-  Class Repository:
+  Modern C++:
     - 'https://github.com/fum-cs/modern-cpp'
+  Class Repository:
+    - 'https://github.com/fum-cs/cpp4python'

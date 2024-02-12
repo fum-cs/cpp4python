@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introduction
+title: Why Learn C++?
 parent: Introduction to C++ for Python Programmers
 nav_order: 1
 ---
