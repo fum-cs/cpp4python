@@ -60,8 +60,9 @@ Run the following code to see that you understand each result.
         <th>C++</th>
     </tr>
     <tr>
-        <td>
-            <pre><code class="language-python">
+<td markdown="span">
+
+```python
   # Function that performs a variety of math operations.
   def main():
   
@@ -78,10 +79,12 @@ Run the following code to see that you understand each result.
       print(2**100)
   
   main()
-  </code></pre>
+
+```  
         </td>
-        <td>
-            <pre><code class="language-cpp">
+<td markdown="span">
+
+```cpp
   #include <iostream>
   #include <cmath>
   using namespace std;
@@ -103,7 +106,9 @@ Run the following code to see that you understand each result.
   
       return 0;
   }
-  </code></pre>
+  
+```
+
         </td>
     </tr>
 </table>
