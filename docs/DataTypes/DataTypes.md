@@ -60,7 +60,6 @@ Run the following code to see that you understand each result.
         <th>C++</th>
     </tr>
     <tr>
-    <tbody>
 <td markdown="span">
 
 ```python
@@ -112,7 +111,6 @@ int main(){
 
 </td>
 </tr>
-</tbody>
 </table>
 
 
