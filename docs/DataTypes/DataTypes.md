@@ -55,11 +55,7 @@ the remainder (modulo) operator is done with `%`.
 Run the following code to see that you understand each result.
 
 <table>
-    <tr>
-        <th>Python</th>
-        <th>C++</th>
-    </tr>
-    <tr>
+<tr>
 <td markdown="span">
 
 ```python
@@ -105,8 +101,7 @@ int main(){
     cout << pow(2, 100) << endl;
 
     return 0;
-}
-  
+} 
 ```
 
 </td>
