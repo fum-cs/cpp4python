@@ -62,7 +62,7 @@ Run the following code to see that you understand each result.
   <tr>
     <td>
 
-```python
+<pre><code class="language-python">
 # Function that performs a variety of math operations.
 def main():
 
@@ -79,12 +79,12 @@ def main():
     print(2**100)
 
 main()
-```
+</code></pre>
 
 </td>
 <td>
 
-```cpp
+<pre><code class="language-cpp">
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -106,11 +106,21 @@ int main(){
 
     return 0;
 }
-```
+</code></pre>
 
 </td>
 </tr>
 </table>
+
+<div class="code-container">
+    <div class="code-column">
+        <h3>Python Code</h3>
+        <pre><code class="language-cpp">
+def greet(name): print(f"Hello, {name}!")
+
+greet(“Alice”) </code></pre> </div> <div class=“code-column”> <h3>C++ Code</h3> <pre><code class=“language-cpp”> #include <iostream>
+
+int main() { std::cout << “Hello, world!” << std::endl; return 0; } </code></pre> </div> </div>
 
 ::: {.tabbed}
 intro
