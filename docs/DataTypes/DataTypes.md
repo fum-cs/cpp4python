@@ -15,21 +15,38 @@ also a special type which holds a memory location called `pointer`. C++
 also has collection or compound data types, which will be discussed in a
 future chapter.
 
-## Results {.tabset}
+<table>
+<tr>
+<th>Json 1</th>
+<th>Markdown</th>
+</tr>
+<tr>
+<td>
+  
+```json
+{
+  "id": 1,
+  "username": "joe",
+  "email": "joe@example.com",
+  "order_id": "3544fc0"
+}
+```
+  
+</td>
+<td>
 
-### Tab One
+```json
+{
+  "id": 5,
+  "username": "mary",
+  "email": "mary@example.com",
+  "order_id": "f7177da"
+}
+```
 
-### Tab Two
-
-## {-}
-
-# [Linux](#tab/linux)
-
-Content for Linux...
-
-# [Windows](#tab/windows)
-
-Content for Windows...
+</td>
+</tr>
+</table>
 
 ---
 
@@ -688,7 +705,10 @@ A/an `___` is used to store a memory address in C++?
     :   Incorrect. Please try again
 :::
 
-::: {.mchoice answer_a="using ``&``" answer_b="using ``*``" answer_c="using ``id``" answer_d="It depends upon the implementation." answer_e="none of the above" correct="a" feedback_a="Right! ``&`` is the \"address-of\" operator, used to reference an address." feedback_b="No. ``int *p;`` defines a pointer to an integer, and ``*p`` would dereference that pointer, i.e. retrieve the data that p points to." feedback_c="No. This is used in Python." feedback_d="No. Try again." feedback_e="One of the above is indeed correct."}
+::: {.mchoice answer_a="using ``&``" answer_b="using ``*``" answer_c="using ``id``" answer_d="It depends upon the implementation." answer_e="none of the above" correct="a" feedback_a="Right! ``&`` is the \"address-of\" operator, used to reference an address." feedback_b="No. ``int *p;`` defines a pointer to an integer, and ``*p`` would dereference that pointer, i.e. retrieve the data that p points to." feedback_c="No. This is used in Python." feedback_d="No. Try again." feedback_|   |   |
+|---|---|
+|   |   |
+e="One of the above is indeed correct."}
 mc_memory
 
 How may one reference a variable\'s memory address in C++?
