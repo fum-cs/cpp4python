@@ -23,7 +23,7 @@ nav_order: 3
 }
 </pre>
 </td>
-<td>
+<td markdown="span">
 
 ```json
 {
@@ -46,38 +46,28 @@ also a special type which holds a memory location called `pointer`. C++
 also has collection or compound data types, which will be discussed in a
 future chapter.
 
-<table>
-<tr>
-<th>Json 1</th>
-<th>Markdown</th>
-</tr>
-<tr>
-<td>
-  
-```json
-{
-  "id": 1,
-  "username": "joe",
-  "email": "joe@example.com",
-  "order_id": "3544fc0"
-}
-```
-  
-</td>
-<td>
+<div style="display: flex;">
+  <div style="flex: 1; margin-right: 20px;">
+    <pre><code class="language-python">
+# Python program
+def greet(name):
+    return f"Hello, {name}!"
 
-```json
-{
-  "id": 5,
-  "username": "mary",
-  "email": "mary@example.com",
-  "order_id": "f7177da"
-}
-```
+print(greet("Alice"))
+    </code></pre>
+  </div>
+  <div style="flex: 1;">
+    <pre><code class="language-cpp">
+// C++ program
+# include <iostream>
 
-</td>
-</tr>
-</table>
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+    </code></pre>
+  </div>
+</div>
 
 ---
 
@@ -744,4 +734,3 @@ mc_memory
 
 How may one reference a variable\'s memory address in C++?
 :::
-
