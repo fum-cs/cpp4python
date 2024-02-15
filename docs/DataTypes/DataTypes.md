@@ -46,8 +46,8 @@ also a special type which holds a memory location called `pointer`. C++
 also has collection or compound data types, which will be discussed in a
 future chapter.
 
-<div style="display: flex;">
-  <div style="flex: 1; margin-right: 20px;">
+<div class="code-container">
+  <div class="code-column">
     <pre><code class="language-python">
 # Python program
 def greet(name):
@@ -56,8 +56,11 @@ def greet(name):
 print(greet("Alice"))
     </code></pre>
   </div>
-  <div style="flex: 1;">
-    <pre><code class="language-cpp">
+  </div>
+<div class="code-container">
+  <div class="code-column">
+      <pre>
+      <code>
 // C++ program
 # include <iostream>
 
