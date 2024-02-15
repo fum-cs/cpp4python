@@ -7,37 +7,6 @@ nav_order: 3
 
 # Using Data in C++
 
-<table>
-<tr>
-<th>Json 1</th>
-<th>Markdown</th>
-</tr>
-<tr>
-<td>
-<pre>
-{
-  "id": 1,
-  "username": "joe",
-  "email": "joe@example.com",
-  "order_id": "3544fc0"
-}
-</pre>
-</td>
-<td markdown="span">
-
-```json
-{
-  "id": 5,
-  "username": "mary",
-  "email": "mary@example.com",
-  "order_id": "f7177da"
-}
-```
-
-</td>
-</tr>
-</table>
-
 C++ requires the users specify the specific data type of each variable
 before it is used. The primary C++ built-in atomic data types are:
 integer (`int`), floating point (`float`), double precision floating
@@ -46,31 +15,7 @@ also a special type which holds a memory location called `pointer`. C++
 also has collection or compound data types, which will be discussed in a
 future chapter.
 
-<div class="code-container">
-  <div class="code-column">
-    <pre><code class="language-python">
-# Python program
-def greet(name):
-    return f"Hello, {name}!"
 
-print(greet("Alice"))
-    </code></pre>
-  </div>
-  </div>
-<div class="code-container">
-  <div class="code-column">
-      <pre>
-      <code>
-// C++ program
-# include <iostream>
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
-    </code></pre>
-  </div>
-</div>
 
 ---
 
@@ -737,3 +682,62 @@ mc_memory
 
 How may one reference a variable\'s memory address in C++?
 :::
+
+
+<!-- <table>
+<tr>
+<th>Json 1</th>
+<th>Markdown</th>
+</tr>
+<tr>
+<td>
+<pre>
+{
+  "id": 1,
+  "username": "joe",
+  "email": "joe@example.com",
+  "order_id": "3544fc0"
+}
+</pre>
+</td>
+<td markdown="span">
+
+```json
+{
+  "id": 5,
+  "username": "mary",
+  "email": "mary@example.com",
+  "order_id": "f7177da"
+}
+```
+
+</td>
+</tr>
+</table>
+
+
+<div class="code-container">
+  <div class="code-column">
+    <pre><code class="language-python">
+# Python program
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+    </code></pre>
+  </div>
+  </div>
+<div class="code-container">
+  <div class="code-column">
+      <pre>
+      <code>
+// C++ program
+# include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+    </code></pre>
+  </div>
+</div> -->
