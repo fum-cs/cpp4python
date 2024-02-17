@@ -5,6 +5,8 @@ parent: Control Structures
 nav_order: 2
 ---
 
+[Temporary mirror link](https://mamintoosi.github.io/slides/topics/cpp4python/3.1.%20Conditionals%20%E2%80%94%20C++%20for%20Python%20Programmers.html)
+
 Conditional statements in Python and C++ are very similar.
 
 # Simple if

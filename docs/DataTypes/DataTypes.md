@@ -5,6 +5,8 @@ parent: C++ Data Types
 nav_order: 3
 ---
 
+[Temporary mirror link](https://mamintoosi.github.io/slides/topics/cpp4python/2.1.%20Using%20Data%20in%20C++%20%E2%80%94%20C++%20for%20Python%20Programmers.html)
+
 # Using Data in C++
 
 
