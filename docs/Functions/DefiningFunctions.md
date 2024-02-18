@@ -14,34 +14,25 @@ nothing (specified by the keyword void). For example, the simple
 function defined below returns an integer which is the double of the
 value you pass into it.
 
-::: {#lst_timesTwo}
-> ::: {.activecode language="cpp" caption="Implementation of the timesTwo function"}
-> timesTwo
->
-> \#include \<iostream\> using namespace std;
->
-> // function that multiplies a number by 2
->
-> :   int timesTwo(int num) { /\* return type int which indicates that
->     an integer is being returned */ return num*2;
->
-> }
->
-> int main() {
->
-> :   
->
->     /\* return type int which indicates that
->
->     :   an integer is being returned \*/
->
->     cout\<\<timesTwo(5)\<\<endl;
->
->     return 0;
->
-> }
-> :::
-:::
+```cpp
+#include <iostream>
+using namespace std;
+
+// function that multiplies a number by 2
+    int timesTwo(int num) {
+    /* return type int which indicates
+       that an integer is being returned */
+    return num*2;
+}
+
+int main() {
+    /* return type int which indicates that
+       an integer is being returned */
+    cout<<timesTwo(5)<<endl;
+
+    return 0;
+}
+```
 
 The syntax for this function definition includes the name, `timesTwo`,
 and a parenthesized list of formal parameters and their types. For this
@@ -55,32 +46,26 @@ can in turn be passed to another invocation.
 
 Let us look at a similar function.
 
-::: {#lst_timesTwoVoid}
-> ::: {.activecode language="cpp" caption="Implementation of the timesTwoVoid function"}
-> timesTwoVoid
->
-> \#include \<iostream\> using namespace std;
->
-> // function that multiplies a number by 2 // except it does not
-> anything it only outputs to the console void timesTwoVoid(int num) {
-> /\* return type void which indicates that an nothing is being returned
-> */ cout\<\< num*2\<\<endl; }
->
-> int main() {
->
-> :   
->
->     /\* return type int which indicates that
->
->     :   an integer is being returned \*/
->
->     timesTwoVoid(5);
->
->     return 0;
->
-> }
-> :::
-:::
+```cpp
+#include <iostream>
+using namespace std;
+
+// function that multiplies a number by 2
+// except it does not anything it only outputs to the console
+void timesTwoVoid(int num) {
+  /* return type void which indicates
+     that an nothing is being returned */
+  cout<< num*2<<endl;
+}
+
+int main() {
+    /* return type int which indicates that
+       an integer is being returned */
+    timesTwoVoid(5);
+
+    return 0;
+}
+```
 
 The `timesTwoVoid` function behaves very similarly to `timesTwo`.
 However, there is one key difference between them. Instead of the `int`
@@ -106,72 +91,29 @@ the function for its intended purpose.
 of the // characters as a comment marker. Any characters that follow the
 // on a line are ignored.
 
-::: {#lst_root}
-**Listing 1**
-:::
+```cpp
+// returns the square root of a number as a double
+#include <iostream>
+using namespace std;
 
-::: {.activecode language="cpp" caption="Newton's Method for finding Square Root"}
-newtonsmethod
+double squareroot(double n) { /*return type double which indicates
+                                that a decimal is being returned*/
+      double root = n / 2;
 
-// returns the square root of a number as a double \#include
-\<iostream\> using namespace std;
+      for (int i = 0; i < 20; i++) {
+                root = (.5) * (root + (n / root));
+      }
 
-double squareroot(double n) { /*return type double which indicates that a decimal is being returned*/
-
-:   double root = n / 2;
-
-    for (int i = 0; i \< 20; i++) {
-
-    :   root = (.5) \* (root + (n / root));
-
-    }
-
-    return root;
-
+      return root;
 }
 
 int main() {
+      cout << squareroot(9) << endl;
+      cout << squareroot(4563) << endl;
 
-:   cout \<\< squareroot(9) \<\< endl; cout \<\< squareroot(4563) \<\<
-    endl;
-
-    return 0;
-
+      return 0;
 }
-:::
-
-::: {.activecode language="cpp"}
-dogwalk
-
-// function that retuns outputs number of steps wallked \#include
-\<iostream\> using namespace std;
-
-void dogWalk(int steps){
-
-:   
-
-    for (int step = 0; step \< steps; step++){
-
-    :   cout \<\< \"dog walked \"\<\< step \<\< \" steps!\"\<\< endl;
-
-    }
-
-}
-
-int main() {
-
-:   dogWalk(11);
-
-    return 0;
-
-}
-:::
-
-::: {.mchoice answer_a="void" answer_b="int" answer_c="dog" answer_d="dogWalk" correct="a" feedback_a="Correct, nothing is returned!" feedback_b="Not quite, check the value preceding the name of the function!" feedback_c="Not quite, dog is not even a data type!" feedback_d="Not quite, that is the name of the function itself!"}
-dog_walker
-
-What is the correct return type of the function above **int main()**?
-:::
+```
 
 # Parameter Passing: by Value versus by Reference
 
@@ -185,21 +127,23 @@ change.
 
 Consider the following two function definitions:
 
-    void functionExample( int inputVar ) { /*return type void which indicates that
-                                             nothing is being returned*/
-        int nextVar = inputVar * 2;
-        inputVar = 4;
+```cpp
+void functionExample( int inputVar ) { /*return type void which indicates that
+                                         nothing is being returned*/
+    int nextVar = inputVar * 2;
+    inputVar = 4;
 
-        cout << "nextVar = " << nextVar << " inputVar = " << inputVar;
-    }
+    cout << "nextVar = " << nextVar << " inputVar = " << inputVar;
+}
 
-    void callingFunction() { /*return type void which indicates
-                                 that nothing is being returned*/
-        int myVar = 10;
+void callingFunction() { /*return type void which indicates
+                             that nothing is being returned*/
+    int myVar = 10;
 
-        functionExample( myVar );
-        cout << "myVar = " << myVar;
-    }
+    functionExample( myVar );
+    cout << "myVar = " << myVar;
+}
+```
 
 When the function `callingFunction()` executes, it calls
 `functionExample(...)` with the variable *myVar* having the value 10.
@@ -208,7 +152,9 @@ the formal parameter *inputVar*, so the value of *nextVar* is 10x2, or
 20. The next statement changes the contents of *inputVar* to 4, so the
 `cout` statement within this function produces the output:
 
-    nextVar = 20 inputVar = 4
+```cpp
+nextVar = 20 inputVar = 4
+```
 
 Notice what happens when `functionExample(...)` ends and execution
 returns to `callingFunction()`. The contents of *myVar* is **still the
@@ -216,7 +162,9 @@ same**, as the location for *myVar* differs from where *inputVar* is
 stored. Thus, *myVar* still has the value 10, and the `cout` statement
 after the function call will produce the output:
 
-    myVar = 10
+```cpp
+myVar = 10
+```
 
 In other words, any changes to the variables are local to the function,
 which is exactly what we want.
@@ -241,37 +189,35 @@ two values as input and swaps their order. Consider the following
 program fragment of a function called `swap_values(...)` that swaps its
 two inputs and the `main()` function that calls `swap_values(...)`.
 
-::: {#lst_swap_inputs}
-> ::: {.activecode caption="Pass by Reference" language="cpp"}
-> activepassrefcpp
->
-> \#include \<iostream\> using namespace std;
->
-> // swap_values() function definition // Interchanges the values
-> located by variable1 and variable2.
->
-> // Notice that this function does not return anything! void
-> swap_values(int &variable1, int &variable2) { int temp; // temporary
-> storage for swap
->
-> > temp = variable1; variable1 = variable2; variable2 = temp;
->
-> }
->
-> int main( ) {
->
-> :   int first_num, second_num; first_num = 7; second_num = 8;
->
->     cout \<\< \"Two numbers before swap function: 1) \" \<\< first_num
->     \<\< \" 2) \" \<\< second_num \<\< endl; swap_values(first_num,
->     second_num); cout \<\< \"The numbers after swap function: 1) \"
->     \<\< first_num \<\< \" 2) \" \<\< second_num;
->
->     return 0;
->
-> }
-> :::
-:::
+```cpp
+#include <iostream>
+using namespace std;
+
+// swap_values() function definition
+// Interchanges the values located by variable1 and variable2.
+
+// Notice that this function does not return anything!
+void swap_values(int &variable1, int &variable2) {
+    int temp;           // temporary storage for swap
+
+    temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
+}
+
+int main( ) {
+    int first_num, second_num;
+    first_num = 7;
+    second_num = 8;
+
+    cout << "Two numbers before swap function: 1) " << first_num << " 2) " << second_num << endl;
+    swap_values(first_num, second_num);
+    cout << "The numbers after swap function: 1) " << first_num << " 2) " << second_num;
+
+    return 0;
+}
+```
+
 
 For this program `Swap Inputs <lst_swap_inputs>`{.interpreted-text
 role="ref"} to reverse the order of the integers the users types in, the
@@ -279,54 +225,6 @@ function `swap_values(...)` must be able to change the values of the
 arguments. Try removing one or both of the \"&\" \'s in this code to see
 what happens.
 
-Analyze the program and answer the question that involves parameter
-passing below:
-
-::: {.activecode coach="" language="cpp"}
-questionexample1
-
-// demonstrates the difference between pass-by-value // and
-pass-by-reference functions. \#include \<iostream\> using namespace std;
-
-void func1(int var1, int var2){
-
-:   int temp; temp = var1; var1 = var2; var2 = temp;
-
-}
-
-void func2(int &var1, int &var2){
-
-:   int temp; temp = var1; var1 = var2; var2 = temp;
-
-}
-
-int main(){
-
-:   int num1 = 2; int num2 = 3;
-
-    func1(num1, num2); cout \<\< \"results of func1:\" \<\< endl; cout
-    \<\< \"num1: \" \<\< num1 \<\< \", num2: \" \<\< num2 \<\< endl;
-    func2(num1, num2); cout \<\< \"results of func2:\" \<\< endl; cout
-    \<\< \"num1: \" \<\< num1 \<\< \", num2: \" \<\< num2 \<\< endl;
-
-    return 0;
-
-}
-:::
-
-::: {.mchoice multiple_answers="" answer_a="func2 is a pass-by-reference function, meaning that the values passed into the function are the direct memory references of the original variables." answer_b="func1 is a pass-by-reference function, meaning that the values passed into the function are the direct memory references of the original variables." answer_c="func1 is a pass-by-value value function, meaning that the values passed into the function are copies of the original variables." answer_d="func2 is a pass-by-value value function, meaning that the values passed into the function are copies of the original variables." correct="a, c" feedback_a="Correct!" feedback_b="No, func1 is simply using copies of the original variables as input because it is not using \"&.\"" feedback_c="Correct!" feedback_d="No, func2 is using the direct memory references of the original variables because its input parameters are using \"&.\""}
-question1_1
-
-What is the difference between **func1** and **func2**? Check all that
-apply.
-:::
-
-::: {.mchoice answer_a="The \"&\" forces variables to change in the global scope, resulting in the two variables not exclusively changing inside of the function." answer_b="The \"&\" passes the location where the two variables are stored, resulting in the two variables switching memory references." answer_c="The \"&\" in this function is incorrectly used, resulting in an overlapping memory reference." answer_d="None of the above" correct="b" feedback_a="No, \"&\" has nothing to do with altering integers in the global scope." feedback_b="Correct!" feedback_c="No, the use of \"&\" here is correct. Read over the active code 4 example earlier in the section." feedback_d="No, one of the above is definitely true."}
-question1_2
-
-Why does adding the \"&\" to parameters in the **func** function cause
-the output to be a different result?
-:::
 
 ------------------------------------------------------------------------
 
@@ -347,16 +245,18 @@ array of integers (note that we need to also pass in the number of
 elements in that array because the array parameter *list\[\]* does not
 include that information):
 
-    double average( int list[], int length ) {  
-         // It is correct syntax to omit the array length on the array itself.
-        double total = 0;                     
-         //return type double which indicates that a decimal is being returned
-        int count;
-        for( count = 0; count < length; count++ ) {
-            total += double(list[count]);
-        };
-        return (total / length);
-    }
+```cpp
+double average( int list[], int length ) {
+     // It is correct syntax to omit the array length on the array itself.
+    double total = 0;
+     //return type double which indicates that a decimal is being returned
+    int count;
+    for( count = 0; count < length; count++ ) {
+        total += double(list[count]);
+    };
+    return (total / length);
+}
+```
 
 Array parameters look like *pass by value*, but they are effectively
 similar to *pass by reference* parameters. When they execute, the
@@ -369,23 +269,27 @@ After a call to the following function, each element in the third array
 argument is equal to the sum of the corresponding two elements in the
 first and second arguments:
 
-    void add_lists( int first[], int second[], int total[], int length ) { 
-        //return type void which indicates that nothing is returned
-        int count;
-        for( count = 0; count < length; count++ ) { 
-            total[count] = first[count] + second[count];
-    };}
+```cpp
+void add_lists( const int first[], const int second[], int total[], int length ) {
+    //return type void which indicates that nothing is returned
+    int count;
+    for( count = 0; count < length; count++ ) {
+        total[count] = first[count] + second[count];
+};}
+```
 
 Upon further examination, we can see that the first two arrays do not
 change values. To prevent ourselves from accidentally modifying any of
 these arrays, we can add the modifier `const` in the function head:
 
-    void add_lists( const int first[], const int second[], int total[], int length ) { 
-        //return type void which indicates that nothing is returned
-        int count;
-        for( count = 0; count < length; count++ ) {
-            total[count] = first[count] + second[count];
-    };}
+```cpp
+void add_lists( const int first[], const int second[], int total[], int length ) {
+    //return type void which indicates that nothing is returned
+    int count;
+    for( count = 0; count < length; count++ ) {
+        total[count] = first[count] + second[count];
+};}
+```
 
 These changes would ensure that the compiler will then not accept any
 statements within the function\'s definition that potentially modify the
@@ -409,69 +313,32 @@ a different technique.
 See the following example where an optional parameter is used to
 accomplish the same task.
 
-::: {.tabbed}
-foverload
-
-::: {.tab}
-C++
-
-::: {.activecode caption="function overloading in C++" language="cpp"}
-foverload_cpp
-
-// demonstrates how function overloading works // by changing the
-parameters on the inputs. \#include \<iostream\> using namespace std;
+```cpp
+// demonstrates how function overloading works
+// by changing the parameters on the inputs.
+#include <iostream>
+using namespace std;
 
 void myfunct(int n) {
-
-:   cout \<\< \"1 parameter: \" \<\< n \<\<endl;
-
+     cout << "1 parameter: " << n <<endl;
 }
 
 void myfunct(int n, int m) {
-
-:   cout \<\< \"2 parameters: \" \<\< n; cout \<\< \" and \" \<\< m
-    \<\<endl;
-
+     cout << "2 parameters: " << n;
+     cout << " and " << m <<endl;
 }
 
 int main() {
 
-> myfunct(4); myfunct(5, 6); myfunct(100);
->
-> return 0;
+    myfunct(4);
+    myfunct(5, 6);
+    myfunct(100);
 
+    return 0;
 }
-:::
-:::
+```
 
-::: {.tab}
-Python
-
-::: {.activecode caption="Function Overloading in Python"}
-foverload_py
-
-\"\"\"Demonstrates the use of multiple parameters using a single
-function\"\"\" def myfunct(n, m=None): if m is None: print(\"1
-parameter: \" + str(n)) else: print(\"2 parameters: \" + str(n),
-end=\"\") print(\" and \", str(m))
-
-def main():
-
-:   myfunct(4); myfunct(5, 6); myfunct(100);
-
-main()
-:::
-:::
-:::
-
-::: {.mchoice multiple_answers="" answer_a="Helps keep consintency in the way your functions are named across your program." answer_b="Functions that do similar tasks differ based on parameters rather than by name." answer_c="A function in essence can fulfill multiple tasks depending on the parameters." answer_d="Removes the limit on how many parameters can be written or passed." correct="a, b, c" feedback_a="Take a look at the other answers as well..." feedback_b="Take a look at the other answers as well..." feedback_c="Take a look at the other answers as well..." feedback_d="Wrong! Function overloading has nothing to do with removing the limit of parameters."}
-foverloading
-
-What are benefits of function overloading?
-:::
-
-::: {.admonition}
-Self Check
+## Self Check
 
 Here\'s a self check that really covers everything so far. You may have
 heard of the infinite monkey theorem? The theorem states that a monkey
