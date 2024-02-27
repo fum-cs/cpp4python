@@ -33,6 +33,7 @@ nav_order: 4
 # Install on WSL
 
 - [Using C++ and WSL in VS Code](https://code.visualstudio.com/docs/cpp/config-wsl)
+	* [Error: /InRelease  Could not resolve 'archive.ubuntu.com'](https://tooba.co/%D8%AD%D9%84-%D9%85%D8%B4%DA%A9%D9%84-temporary-failure-resolving-ubuntu/)
 
 # Throubleshooting
 - According to [msys2 github:](https://github.com/msys2/MSYS2-packages/issues/2869) pacman -Syyuu, pacman -Syyuu
