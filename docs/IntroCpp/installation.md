@@ -21,7 +21,7 @@ nav_order: 4
 # Install a C++ compiler
 
 - [Download & Install VSCode](https://code.visualstudio.com/download)
-- Get the latest version of MinGW-w64 via [MSYS2](https://www.msys2.org/), [download page](https://github.com/msys2/msys2-installer/releases/download/2024-01-13/msys2-x86_64-20240113.exe), (about 80 MG downloaded, size of installation folder: about 1.7GB, installation duration: about 30 min)
+- Get the latest version of MinGW-w64 via [MSYS2](https://www.msys2.org/), [download page](https://github.com/msys2/msys2-installer/releases/download/2024-07-27/msys2-x86_64-20240727.exe), (about 100 MG downloaded, size of installation folder: about 1.5GB, installation duration: about 30 min)
 - [Config MinGW in VSCode](https://code.visualstudio.com/docs/cpp/config-mingw)
     * Follow steps 1-7 of the mentioned site.
 - Installing the following extensions in VSCode:
