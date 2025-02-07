@@ -8,8 +8,6 @@ nav_order: 3
 [Temporary mirror link](https://mamintoosi.github.io/slides/topics/cpp4python/2.1.%20Using%20Data%20in%20C++%20%E2%80%94%20C++%20for%20Python%20Programmers.html)
 
 
----
-
 # Using Data in C++
 
 C++ requires the users specify the specific data type of each variable before it is used.  
@@ -79,101 +77,7 @@ def main():
 
 main()
 ```
-## Boolean Data
 
-Boolean data types are named after George Boole, who was an English mathematician,  
-so the word **"Boolean"** should be capitalized. However,  
-the Boolean data type in C++ uses the keyword `bool`, which is not capitalized.  
-
-The possible state values for a C++ Boolean are lowercase `true` and `false`.  
-Be sure to note the difference in capitalization from Python.  
-In Python, these same truth values are capitalized, while in C++, they are lowercase.  
-
-C++ uses the standard Boolean operators, but they are represented  
-differently than in Python:  
-- **"and"** is given by `&&`  
-- **"or"** is given by `||`  
-- **"not"** is given by `!`  
-
-Internally, `true` and `false` are actually stored as `1` and `0`, respectively.  
-Hence, we see this in output as well.  
-
-## Logical Operators in C++
-
-### C++ Code: Logical Operators
-```cpp
-#include <iostream>
-using namespace std;
-
-// Function that demonstrates logical operators
-int main() {
-    cout << true << endl;
-    cout << false << endl;
-    cout << (true || false) << endl;
-    cout << (true && false) << endl;
-    return 0;
-}
-```
-
-### Python Code: Logical Operators
-```python
-# Function that demonstrates logical operators.
-def main():
-    print(True)
-    print(False)
-    print(True or False)
-    print(True and False)
-
-main()
-```
-
-Boolean data objects are also used as results for comparison operators  
-such as equality (`==`) and greater than (`>`).  
-
-In addition, relational operators and logical operators can be combined together to  
-form complex logical expressions.  
-
-## C++ Relational and Logical Operators
-
-| **Operation Name**        | **Operator** | **Explanation**                                          |
-|---------------------------|-------------|----------------------------------------------------------|
-| Less than                 | `<`         | Less than operator                                      |
-| Greater than              | `>`         | Greater than operator                                   |
-| Less than or equal        | `<=`        | Less than or equal to operator                         |
-| Greater than or equal     | `>=`        | Greater than or equal to operator                      |
-| Equal                    | `==`        | Equality operator                                      |
-| Not equal                | `!=`        | Not equal operator                                    |
-| Logical AND              | `&&`        | Both operands must be true for the result to be true   |
-| Logical OR               | `||`        | One or the other operand must be true for the result to be true |
-| Logical NOT              | `!`         | Negates the truth value: false becomes true, true becomes false |
-
-## Basic Relational and Logical Operators
-
-### C++ Code:
-```cpp
-#include <iostream>
-using namespace std;
-
-// Function that demonstrates relational operators.
-int main() {
-    cout << (5 == 10) << endl;
-    cout << (10 > 5) << endl;
-    cout << ((5 >= 1) && (5 <= 10)) << endl;
-
-    return 0;
-}
-```
-
-### Python Code:
-```python
-# Function that demonstrates relational operators.
-def main():
-    print(5 == 10)
-    print(10 > 5)
-    print((5 >= 1) and (5 <= 10))
-
-main()
-```
 
 ## Boolean Data
 
@@ -231,17 +135,17 @@ form complex logical expressions.
 
 ## C++ Relational and Logical Operators
 
-| **Operation Name**        | **Operator** | **Explanation**                                          |
-|---------------------------|-------------|----------------------------------------------------------|
-| Less than                 | `<`         | Less than operator                                      |
-| Greater than              | `>`         | Greater than operator                                   |
-| Less than or equal        | `<=`        | Less than or equal to operator                         |
-| Greater than or equal     | `>=`        | Greater than or equal to operator                      |
-| Equal                    | `==`        | Equality operator                                      |
-| Not equal                | `!=`        | Not equal operator                                    |
-| Logical AND              | `&&`        | Both operands must be true for the result to be true   |
-| Logical OR               | `||`        | One or the other operand must be true for the result to be true |
-| Logical NOT              | `!`         | Negates the truth value: false becomes true, true becomes false |
+| **Operation Name**        | **Operator** | **Explanation**                                                |
+|---------------------------|-------------|-----------------------------------------------------------------|
+| Less than                 | `<`         | Less than operator                                              |
+| Greater than              | `>`         | Greater than operator                                           |
+| Less than or equal        | `<=`        | Less than or equal to operator                                  |
+| Greater than or equal     | `>=`        | Greater than or equal to operator                               |
+| Equal                     | `==`        | Equality operator                                               |
+| Not equal                 | `!=`        | Not equal operator                                              |
+| Logical AND               | `&&`        | Both operands must be true for the result to be true            |
+| Logical OR                | `||`        | One or the other operand must be true for the result to be true |
+| Logical NOT               | `!`         | Negates the truth value: false becomes true, true becomes false |
 
 ## Basic Relational and Logical Operators
 
